@@ -55,7 +55,6 @@ const resolvers = {
       return "pong"
     },
     getuser(root, args) {
-      console.log(args)
       return Users.find(e => e.id === args.user_id);
     },
     allPlaylists() {
